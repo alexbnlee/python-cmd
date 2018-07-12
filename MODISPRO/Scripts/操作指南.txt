@@ -1,0 +1,29 @@
+程序实现功能：将下载的数据放到指定文件夹，通过运行程序实现对数据的处理，并将处理的结果自动传到专网中。
+
+数据下载地址：
+Terra
+ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MOD021KM/2016/
+ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MOD02HKM/2016/
+ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MOD02QKM/2016/
+ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MOD03/2016/
+
+Aqua
+ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MYD021KM/2016/
+ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MYD02HKM/2016/
+ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MYD02QKM/2016/
+ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MYD03/2016/
+
+数据下载网站账号密码如下：
+账号：alex_bn_lee
+密码：1Asdfghjkl
+
+操作步骤：
+1、把需要处理的L1B数据4个放到MODIS数据文件夹；其他的数据不要保存在这个文件夹
+2、运行run.bat（run-rename.bat可以不用修改数据名称）
+3、再运行putty.exe，连接到服务器192.168.14.28
+   用户名：ocean,密码：lj666yjh,在窗口中输入并运行：./ylc.sh
+4、putty.exe运行结束后，关闭其窗口，获取处理后的图像数据在result中。
+
+※ 文件夹修改路径后，需要编辑run.bat和run-rename.bat中相应的路径，貌似必须在根目录！
+
+不以管理员身份运行！
